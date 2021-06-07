@@ -1,10 +1,8 @@
 import React from 'react'
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
-    Link,
-    useRouteMatch
+    Link
 } from "react-router-dom";
 
 //Deliverer handling components import
