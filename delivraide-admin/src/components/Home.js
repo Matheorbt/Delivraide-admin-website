@@ -1,10 +1,11 @@
 import React from 'react'
-import Navbar from './Navigation/Navbar'
+import NavigationBar from './Navigation/NavigationBar'
 
+// React Bootstrap import
 function Home() {
     return (
         <div>
-            <Navbar/>
+            <NavigationBar />
             <h1>Home</h1>
         </div>
     )

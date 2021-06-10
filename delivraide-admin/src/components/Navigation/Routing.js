@@ -1,4 +1,3 @@
-import '../../styles/index.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,36 +15,36 @@ import AddDeliverer from '../Deliverer/AddDeliverer'
 //News
 import News from '../News/News';
 import NewsList from '../News/NewsList';
-import NewsAdd from '../News/AddNews';
+import AddNews from '../News/AddNews';
 
 function Routing() {
   return (
     <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          {/* Route for deliverer */}
-          <Route path="/livreur">
-            <Deliverer />
-          </Route>
-          <Route path="/livreur/candidature">
-            <DelivererApply />
-          </Route>
-          <Route path="/livreur/ajouter">
-            <AddDeliverer />
-          </Route>
-          {/* Route for news */}
-          <Route path="/news">
-            <News />
-          </Route>
-          <Route path="/news/ajouter">
-            <NewsAdd />
-          </Route>
-          <Route path="/news/liste">
-            <NewsList />
-          </Route>
-        </Switch>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        {/* Route for deliverer */}
+        <Route path="/livreur">
+          <Deliverer />
+        </Route>
+        <Route path="/livreur/candidature">
+          <DelivererApply />
+        </Route>
+        <Route path="/livreur/ajouter">
+          <AddDeliverer />
+        </Route>
+        {/* Route for news */}
+        <Route path="/news">
+          <News />
+        </Route>
+        <Route path="/news/ajouter">
+          <AddNews />
+        </Route>
+        <Route path="/news/liste">
+          <NewsList />
+        </Route>
+      </Switch>
     </Router>
   );
 }

@@ -4,6 +4,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import NavigationBar from '../Navigation/NavigationBar'
 
 //Deliverer handling components import
 import DelivererApply from './DelivererApply'
@@ -12,15 +13,7 @@ import AddDeliverer from './AddDeliverer'
 function Deliverer() {
     return (
         <div>
-            <h2>Livreur</h2>
-            <ul>
-                <li>
-                    <Link to="/livreur/candidature">Candidature en attente</Link>
-                </li>
-                <li>
-                    <Link to="/livreur/ajouter">Ajouter un livreur</Link>
-                </li>
-            </ul>
+            <NavigationBar />
             <Switch>
                 <Route exact path="/livreur/candidature">
                     <DelivererApply />
