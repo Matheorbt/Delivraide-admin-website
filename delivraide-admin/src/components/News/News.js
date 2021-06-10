@@ -1,8 +1,7 @@
 import React from 'react'
 import {
     Switch,
-    Route,
-    Link,
+    Route
 } from "react-router-dom";
 import NavigationBar from '../Navigation/NavigationBar'
 
