@@ -27,7 +27,7 @@ function AddDeliverer() {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicTitle">
                         <Form.Label><h3>Age</h3></Form.Label>
-                        <Form.Control size="lg" type="text" />
+                        <Form.Control size="lg" type="number" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicTitle">
                         <Form.Label><h3>Profession</h3></Form.Label>
@@ -38,7 +38,7 @@ function AddDeliverer() {
                     </Form.Group>
                     <Button variant="primary" type="submit">
                         Enregistrer
-                </Button>
+                    </Button>
                 </Form>
             </Container>
         </>

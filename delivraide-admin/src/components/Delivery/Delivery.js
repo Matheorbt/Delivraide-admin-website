@@ -6,9 +6,6 @@ import {
     Route
 } from "react-router-dom";
 
-// React Bootstrap import
-import { Card, Container, ListGroup, Button } from 'react-bootstrap';
-
 //Delivery handling components import
 import DeliveryList from './DeliveryList'
 import AddDelivery from './AddDelivery'
