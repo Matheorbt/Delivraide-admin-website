@@ -5,13 +5,13 @@ import {
 } from "react-router-dom";
 import NavigationBar from '../Navigation/NavigationBar'
 
-//Deliverer handling components import
+//News handling components import
 import NewsList from './NewsList'
 import AddNews from './AddNews'
 
 function News() {
     return (
-        <div>
+        <>
             <NavigationBar />
             <Switch>
                 <Route exact path="/news/liste">
@@ -21,7 +21,7 @@ function News() {
                     <AddNews />
                 </Route>
             </Switch>
-        </div>
+        </>
     )
 }
 

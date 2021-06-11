@@ -6,7 +6,7 @@ import {
 import NavigationBar from '../Navigation/NavigationBar'
 
 //Deliverer handling components import
-import DelivererApply from './DelivererApply'
+import DelivererList from './DelivererList'
 import AddDeliverer from './AddDeliverer'
 
 function Deliverer() {
@@ -14,8 +14,8 @@ function Deliverer() {
         <div>
             <NavigationBar />
             <Switch>
-                <Route exact path="/livreur/candidature">
-                    <DelivererApply />
+                <Route exact path="/livreur/liste">
+                    <DelivererList />
                 </Route>
                 <Route exact path="/livreur/ajouter">
                     <AddDeliverer />

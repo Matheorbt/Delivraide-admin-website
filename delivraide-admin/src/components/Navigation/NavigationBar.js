@@ -24,27 +24,42 @@ function NavigationBar() {
     return (
         <>
             <Navbar bg="light" expand="never">
-                <Container>
-                    <Container fluid="xl">
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <h1>{HeaderView()}</h1>
+                <Container fluid>
+                    <Container className="d-flex justify-content-around" fluid>
+                        <Row className="d-flex justify-content-between">
+                            <Row className="d-flex align-items-center">
+                                <Col><Navbar.Toggle aria-controls="basic-navbar-nav" /></Col>
+                                <Col><h1>{HeaderView()}</h1></Col>
+                            </Row>
+                        </Row>
                         <Navbar.Brand href="/"><img src={logoDelivraide} width="250" alt="logo Delivr'aide"></img></Navbar.Brand>
+                        <Row className="d-flex align-items-center">
+                            <Col className="d-flex align-items-center mr-4">
+                                <Image src={profilePictureDelivraide} width="100" />
+                            </Col>
+                            <Col className="d-flex align-items-center flex-column justify-content-start">
+                                <Row><h1 className="font-weight-bold">Yovann Pigenet</h1></Row>
+                                <Row><p className="font-weight-light">Président</p></Row>
+                            </Col>
+                        </Row>
                     </Container>
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Row>
-                                <Col xs={5}><Image src={profilePictureDelivraide} width="100" /></Col>
-                                <Col><h1 className="account-name">Didier Deschamps</h1></Col>
-                            </Row>
-                            <Nav.Link as={Link} to="/">Accueil</Nav.Link>
-                            <NavDropdown title="Livreurs" id="basic-nav-dropdown">
-                                <NavDropdown.Item as={Link} to="/livreur/candidature">Candidatures</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/livreur/ajouter">Ajouter</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="News" id="basic-nav-dropdown">
-                                <NavDropdown.Item as={Link} to="/news/liste">Liste</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/news/ajouter">Ajouter</NavDropdown.Item>
-                            </NavDropdown>
+                        <Nav>
+                            <Col>
+                                <Nav.Link as={Link} to="/">Accueil</Nav.Link>
+                                <NavDropdown title="Livreurs" id="basic-nav-dropdown">
+                                    <NavDropdown.Item as={Link} to="/livreur/liste">Liste</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/livreur/ajouter">Ajouter</NavDropdown.Item>
+                                </NavDropdown>
+                                <NavDropdown title="News" id="basic-nav-dropdown">
+                                    <NavDropdown.Item as={Link} to="/news/liste">Liste</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/news/ajouter">Ajouter</NavDropdown.Item>
+                                </NavDropdown>
+                                <NavDropdown title="Livraisons" id="basic-nav-dropdown">
+                                    <NavDropdown.Item as={Link} to="/livraison/liste">Liste</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/livraison/ajouter">Ajouter</NavDropdown.Item>
+                                </NavDropdown>
+                            </Col>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
