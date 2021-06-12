@@ -34,10 +34,7 @@ function NavigationBar() {
                         </Row>
                         <Navbar.Brand href="/"><img src={logoDelivraide} width="250" alt="logo Delivr'aide"></img></Navbar.Brand>
                         <Row className="d-flex align-items-center">
-                            <Col className="d-flex align-items-center mr-4">
-                                <Image src={profilePictureDelivraide} width="100" />
-                            </Col>
-                            <Col className="d-flex align-items-center flex-column justify-content-start">
+                            <Col className="d-flex align-items-start flex-column">
                                 <Row><h1 className="font-weight-bold">Yovann Pigenet</h1></Row>
                                 <Row><p className="font-weight-light">Président</p></Row>
                             </Col>
