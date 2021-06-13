@@ -13,37 +13,31 @@ function Home() {
         <div>
             <NavigationBar />
             <Container fluid>
-                <Row className="mt-4 mb-4 d-flex justify-content-center align-content-center">
-                    <Col className="d-flex align-items-stretch">
-                        <Card bg="primary">
-                            <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-newspaper-o mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de News</h3></Card.Header>
-                            <Card.Body>
-                                <Card.Title className="d-flex justify-content-center align-items-center">
-                                    <h3 className="text-white">45</h3>
-                                </Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col className="d-flex align-items-stretch">
-                        <Card bg="info">
-                            <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-bicycle mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de livreurs</h3></Card.Header>
-                            <Card.Body>
-                                <Card.Title className="d-flex justify-content-center align-items-center">
-                                    <h3 className="text-white">45</h3>
-                                </Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col className="d-flex align-items-stretch">
-                        <Card bg="danger">
-                            <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-shopping-bag mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de Livraisons</h3></Card.Header>
-                            <Card.Body>
-                                <Card.Title className="d-flex justify-content-center align-items-center">
-                                    <h3 className="text-white">45</h3>
-                                </Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                <Row className="mt-4 mb-4 d-flex justify-content-around align-content-center">
+                    <Card bg="primary" className="d-flex align-content-stretch flex-grow-1 m-5">
+                        <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-newspaper-o mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de News</h3></Card.Header>
+                        <Card.Body>
+                            <Card.Title className="d-flex justify-content-center align-items-center">
+                                <h3 className="text-white">45</h3>
+                            </Card.Title>
+                        </Card.Body>
+                    </Card>
+                    <Card bg="info" className="d-flex align-content-stretch flex-grow-1 m-5">
+                        <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-bicycle mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de livreurs</h3></Card.Header>
+                        <Card.Body>
+                            <Card.Title className="d-flex justify-content-center align-items-center">
+                                <h3 className="text-white">45</h3>
+                            </Card.Title>
+                        </Card.Body>
+                    </Card>
+                    <Card bg="danger" className="d-flex align-content-stretch flex-grow-1 m-5">
+                        <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-shopping-bag mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de Livraisons</h3></Card.Header>
+                        <Card.Body>
+                            <Card.Title className="d-flex justify-content-center align-items-center">
+                                <h3 className="text-white">45</h3>
+                            </Card.Title>
+                        </Card.Body>
+                    </Card>
                 </Row>
                 <Row>
                     <Col>

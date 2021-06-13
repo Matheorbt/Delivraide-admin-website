@@ -5,10 +5,9 @@ import {
 } from "react-router-dom";
 
 import logoDelivraide from '../../assets/logo/logo.png'
-import profilePictureDelivraide from '../../assets/logo/delivraide-icon-192.png'
 
 // React Bootstrap import
-import { Image, Navbar, Container, Nav, NavDropdown, Row, Col } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Row, Col } from 'react-bootstrap';
 
 function HeaderView() {
     const location = useLocation();
