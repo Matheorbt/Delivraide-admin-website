@@ -12,16 +12,17 @@ function Home() {
     let nbDelivery = 1162;
     let nbDeliverer = 298;
     let nbNews = 5;
+
     return (
         <div>
             <NavigationBar />
             <Container fluid className="mb-5">
                 <Row className="mt-4 mb-4 d-flex justify-content-around align-content-center">
                     <Card bg="primary" className="d-flex align-content-stretch flex-grow-1 m-5">
-                        <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-newspaper-o mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de News</h3></Card.Header>
+                        <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fas fa-newspaper mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de News</h3></Card.Header>
                         <Card.Body>
                             <Card.Title className="d-flex justify-content-center align-items-center">
-                                <h3 className="text-white">{nbNews}</h3>
+                                <h2 className="text-white">{nbNews}</h2>
                             </Card.Title>
                         </Card.Body>
                     </Card>
@@ -29,7 +30,7 @@ function Home() {
                         <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-bicycle mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de livreurs</h3></Card.Header>
                         <Card.Body>
                             <Card.Title className="d-flex justify-content-center align-items-center">
-                                <h3 className="text-white">{nbDeliverer}</h3>
+                                <h2 className="text-white">{nbDeliverer}</h2>
                             </Card.Title>
                         </Card.Body>
                     </Card>
@@ -37,7 +38,7 @@ function Home() {
                         <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-shopping-bag mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de Livraisons</h3></Card.Header>
                         <Card.Body>
                             <Card.Title className="d-flex justify-content-center align-items-center">
-                                <h3 className="text-white">{nbDelivery}</h3>
+                                <h2 className="text-white">{nbDelivery}</h2>
                             </Card.Title>
                         </Card.Body>
                     </Card>
@@ -78,9 +79,36 @@ function Home() {
                         </Card>
                     </Col>
                 </Row>
-                {/* <Row>
-                    <a href="https://twitter.com/intent/tweet?button_hashtag=delivraide&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #delivraide</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </Row> */}
+                <hr></hr>
+                <Row>
+                    <h1>Réseaux sociaux (Followers)</h1>
+                </Row>
+                <Row>
+                    <Card bg="primary" className="d-flex align-content-stretch flex-grow-1 m-5">
+                        <Card.Header className="d-flex justify-content-center align-items-center"><i style={{ fontSize: "48px", color: "white" }} className="fab fa-linkedin" aria-hidden="true"></i></Card.Header>
+                        <Card.Body>
+                            <Card.Title className="d-flex justify-content-center align-items-center text-white">
+                                <h2>45</h2>
+                            </Card.Title>
+                        </Card.Body>
+                    </Card>
+                    <Card bg="secondary" className="d-flex align-content-stretch flex-grow-1 m-5">
+                        <Card.Header className="d-flex justify-content-center align-items-center"><i style={{ fontSize: "48px", color: "white" }} className="fab fa-instagram" aria-hidden="true"></i></Card.Header>
+                        <Card.Body>
+                            <Card.Title className="d-flex justify-content-center align-items-center text-white">
+                                <h2>45</h2>
+                            </Card.Title>
+                        </Card.Body>
+                    </Card>
+                    <Card bg="danger" className="d-flex align-content-stretch flex-grow-1 m-5">
+                        <Card.Header className="d-flex justify-content-center align-items-center"><i style={{ fontSize: "48px", color: "white" }} className="fab fa-tiktok" aria-hidden="true"></i></Card.Header>
+                        <Card.Body>
+                            <Card.Title className="d-flex justify-content-center align-items-center text-white">
+                                <h2>45</h2>
+                            </Card.Title>
+                        </Card.Body>
+                    </Card>
+                </Row>
             </Container>
         </div>
     )
