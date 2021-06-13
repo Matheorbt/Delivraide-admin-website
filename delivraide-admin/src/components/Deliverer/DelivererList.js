@@ -149,10 +149,14 @@ function DelivererList() {
                 </Modal.Header>
                 <Modal.Body>
                     <ListGroup className="d-flex justify-content-between">
-                        <ListGroup.Item className="font-weight-bold border-0">Titre :<span className="font-weight-bold"><br />Infos livreurs Montpellier</span></ListGroup.Item>
-                    </ListGroup>
-                    <ListGroup className="d-flex justify-content-between">
-                        <ListGroup.Item className="font-weight-bold border-0">Contenu :<span className="font-weight-light"><br />Je suis homosexuel depuis ma tendre enfance</span></ListGroup.Item>
+                        <ListGroup.Item className="font-weight-bold border-0">Nom: <span className="font-weight-bold">Patrick</span></ListGroup.Item>
+                        <ListGroup.Item className="font-weight-bold border-0">Prénom: <span className="font-weight-bold">Dimitri</span></ListGroup.Item>
+                        <ListGroup.Item className="font-weight-bold border-0">Téléphone: <span className="font-weight-bold">0634758154</span></ListGroup.Item>
+                        <ListGroup.Item className="font-weight-bold border-0">E-mail: <span className="font-weight-bold">dimitri.patrick@gmail.com</span></ListGroup.Item>
+                        <ListGroup.Item className="font-weight-bold border-0">Ville: <span className="font-weight-bold">Paris</span></ListGroup.Item>
+                        <ListGroup.Item className="font-weight-bold border-0">Code postal: <span className="font-weight-bold">92000</span></ListGroup.Item>
+                        <ListGroup.Item className="font-weight-bold border-0">Age: <span className="font-weight-bold">24 ans</span></ListGroup.Item>
+                        <ListGroup.Item className="font-weight-bold border-0">Profession: <span className="font-weight-bold">Caissier</span></ListGroup.Item>
                     </ListGroup>
                 </Modal.Body>
                 <Modal.Footer>

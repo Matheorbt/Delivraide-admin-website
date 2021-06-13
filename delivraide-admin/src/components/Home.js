@@ -9,6 +9,9 @@ import {
 import { Card, Container, Col, Row, ListGroup, Button } from 'react-bootstrap';
 
 function Home() {
+    let nbDelivery = 1162;
+    let nbDeliverer = 298;
+    let nbNews = 5;
     return (
         <div>
             <NavigationBar />
@@ -18,7 +21,7 @@ function Home() {
                         <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-newspaper-o mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de News</h3></Card.Header>
                         <Card.Body>
                             <Card.Title className="d-flex justify-content-center align-items-center">
-                                <h3 className="text-white">45</h3>
+                                <h3 className="text-white">{nbNews}</h3>
                             </Card.Title>
                         </Card.Body>
                     </Card>
@@ -26,7 +29,7 @@ function Home() {
                         <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-bicycle mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de livreurs</h3></Card.Header>
                         <Card.Body>
                             <Card.Title className="d-flex justify-content-center align-items-center">
-                                <h3 className="text-white">45</h3>
+                                <h3 className="text-white">{nbDeliverer}</h3>
                             </Card.Title>
                         </Card.Body>
                     </Card>
@@ -34,7 +37,7 @@ function Home() {
                         <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-shopping-bag mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de Livraisons</h3></Card.Header>
                         <Card.Body>
                             <Card.Title className="d-flex justify-content-center align-items-center">
-                                <h3 className="text-white">45</h3>
+                                <h3 className="text-white">{nbDelivery}</h3>
                             </Card.Title>
                         </Card.Body>
                     </Card>
@@ -75,6 +78,9 @@ function Home() {
                         </Card>
                     </Col>
                 </Row>
+                {/* <Row>
+                    <a href="https://twitter.com/intent/tweet?button_hashtag=delivraide&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #delivraide</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </Row> */}
             </Container>
         </div>
     )
