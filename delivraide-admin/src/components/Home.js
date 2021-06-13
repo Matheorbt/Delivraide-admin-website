@@ -46,7 +46,7 @@ function Home() {
                     <Col>
                         <Card>
                             <Card.Header className="d-flex justify-content-between align-items-center">
-                                <Card.Title>Livraisons disponibles</Card.Title>
+                                <Card.Title>Livraisons disponibles (5 dernières)</Card.Title>
                                 <Button as={Link} className="ml-10" to="/livraison/liste">En voir +</Button>
                             </Card.Header>
                             <ListGroup variant="flush" horizontal className="d-flex justify-content-between">
@@ -64,7 +64,7 @@ function Home() {
                     <Col>
                         <Card>
                             <Card.Header className="d-flex justify-content-between align-items-center">
-                                <Card.Title>News Actuelles</Card.Title>
+                                <Card.Title>News Actuelles (5 dernières)</Card.Title>
                                 <Button as={Link} to="/news/liste" className="ml-10">En voir +</Button>
                             </Card.Header>
                             <ListGroup variant="flush" horizontal className="d-flex justify-content-around">
