@@ -15,7 +15,7 @@ function Home() {
     return (
         <div>
             <NavigationBar />
-            <Container fluid>
+            <Container fluid className="mb-5">
                 <Row className="mt-4 mb-4 d-flex justify-content-around align-content-center">
                     <Card bg="primary" className="d-flex align-content-stretch flex-grow-1 m-5">
                         <Card.Header className="d-flex justify-content-between align-items-center"><i style={{ fontSize: "32px" }} className="fa fa-newspaper-o mr-4 text-white" aria-hidden="true"></i><h3 className="text-white">Nb. de News</h3></Card.Header>

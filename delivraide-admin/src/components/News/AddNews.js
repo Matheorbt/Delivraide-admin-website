@@ -6,7 +6,7 @@ import { Container, Button, Form } from 'react-bootstrap';
 function AddNews() {
     return (
         <>
-            <Container>
+            <Container className="mb-5">
                 <h1>Ecrire une news</h1>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicTitle">

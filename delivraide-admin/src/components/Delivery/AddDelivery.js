@@ -6,7 +6,7 @@ import { Container, Button, Form } from 'react-bootstrap';
 function AddDelivery() {
     return (
         <>
-            <Container>
+            <Container className="mb-5">
                 <h1>Ajouter une livraison</h1>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicTitle">

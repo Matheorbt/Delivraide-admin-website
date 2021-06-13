@@ -25,7 +25,7 @@ function DelivererList() {
     const handleShowInspect = () => setShowInspect(true);
     return (
         <>
-            <Container fluid>
+            <Container fluid className="mb-5">
                 <h1>Liste des Livreurs</h1>
                 <Card>
                     <Card.Header className="d-flex justify-content-between align-items-center">
